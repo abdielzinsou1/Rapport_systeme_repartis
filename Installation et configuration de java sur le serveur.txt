@@ -1,0 +1,125 @@
+Installation et configuration de java et adresses ip du Serveur
+
+PS C:\Users\Lenovo\Desktop\Dossier Perso\UNCHK\M1 SRIV\Systèmes Répartis\Monitoring> java --version
+java 25.0.2 2026-01-20 LTS
+Java(TM) SE Runtime Environment (build 25.0.2+10-LTS-69)
+Java HotSpot(TM) 64-Bit Server VM (build 25.0.2+10-LTS-69, mixed mode, sharing)
+PS C:\Users\Lenovo\Desktop\Dossier Perso\UNCHK\M1 SRIV\Systèmes Répartis\Monitoring> javac --version
+javac 25.0.2
+PS C:\Users\Lenovo\Desktop\Dossier Perso\UNCHK\M1 SRIV\Systèmes Répartis\Monitoring>
+
+
+PS C:\Users\Lenovo\Desktop\Dossier Perso\UNCHK\M1 SRIV\Systèmes Répartis\Monitoring> ipconfig
+
+Configuration IP de Windows
+
+
+Carte Ethernet Ethernet 2 :
+
+   Statut du média. . . . . . . . . . . . : Média déconnecté
+   Suffixe DNS propre à la connexion. . . :
+
+Carte Ethernet Ethernet 3 :
+
+   Statut du média. . . . . . . . . . . . : Média déconnecté
+   Suffixe DNS propre à la connexion. . . :
+
+Carte Ethernet Ethernet :
+
+   Statut du média. . . . . . . . . . . . : Média déconnecté
+   Suffixe DNS propre à la connexion. . . :
+
+Carte inconnue Connexion au réseau local :
+
+   Statut du média. . . . . . . . . . . . : Média déconnecté
+   Suffixe DNS propre à la connexion. . . :
+
+Carte Ethernet VirtualBox Host-Only Network :
+
+   Suffixe DNS propre à la connexion. . . :
+   Adresse IPv6 de liaison locale. . . . .: fe80::bc48:bf4:bf5b:e9a%14
+   Adresse IPv4. . . . . . . . . . . . . .: 192.168.56.1
+   Masque de sous-réseau. . . . . . . . . : 255.255.255.0
+   Passerelle par défaut. . . . . . . . . :
+
+Carte réseau sans fil Connexion au réseau local* 1 :
+
+   Statut du média. . . . . . . . . . . . : Média déconnecté
+   Suffixe DNS propre à la connexion. . . :
+
+Carte réseau sans fil Connexion au réseau local* 10 :
+
+   Statut du média. . . . . . . . . . . . : Média déconnecté
+   Suffixe DNS propre à la connexion. . . :
+
+Carte Ethernet VMware Network Adapter VMnet1 :
+
+   Suffixe DNS propre à la connexion. . . : 
+   Adresse IPv6 de liaison locale. . . . .: fe80::86c5:3a9a:5c7b:331a%24
+   Adresse IPv4. . . . . . . . . . . . . .: 192.168.199.1
+   Masque de sous-réseau. . . . . . . . . : 255.255.255.0
+   Passerelle par défaut. . . . . . . . . :
+
+Carte Ethernet VMware Network Adapter VMnet8 :
+
+   Suffixe DNS propre à la connexion. . . :
+   Adresse IPv6 de liaison locale. . . . .: fe80::5f13:9024:d718:5262%2
+   Adresse IPv4. . . . . . . . . . . . . .: 192.168.142.1
+   Masque de sous-réseau. . . . . . . . . : 255.255.255.0
+   Passerelle par défaut. . . . . . . . . :
+
+Carte réseau sans fil Wi-Fi 2 :
+
+   Suffixe DNS propre à la connexion. . . :
+   Adresse IPv6 de liaison locale. . . . .: fe80::1eca:b3a0:785c:651f%9
+   Adresse IPv4. . . . . . . . . . . . . .: 10.197.25.41
+   Masque de sous-réseau. . . . . . . . . : 255.255.255.0
+   Passerelle par défaut. . . . . . . . . : 10.197.25.38
+
+Carte Ethernet Connexion réseau Bluetooth :
+
+   Statut du média. . . . . . . . . . . . : Média déconnecté
+   Suffixe DNS propre à la connexion. . . :
+PS C:\Users\Lenovo\Desktop\Dossier Perso\UNCHK\M1 SRIV\Systèmes Répartis\Monitoring>
+
+
+Démarrage du Serveur et connexion aux nœuds (vm1 et vm2)
+
+PS C:\Users\Lenovo\Desktop\Dossier Perso\UNCHK\M1 SRIV\Systèmes Répartis\Monitoring> java .\ServerMain.java
+Server started on port 5000
+Client connected
+Received: {"node":"vm2","cpu":77,"memory":14}
+Client connected
+Received: {"node":"vm2","cpu":74,"memory":0}
+Client connected
+Received: {"node":"vm2","cpu":7,"memory":1}
+Client connected
+Received: {"node":"vm2","cpu":5,"memory":29}
+Client connected
+Received: {"node":"vm2","cpu":89,"memory":98}
+Client connected
+Received: {"node":"vm2","cpu":87,"memory":65}
+Client connected
+Received: {"node":"vm2","cpu":95,"memory":3}
+Client connected
+Received: {"node":"vm2","cpu":61,"memory":16}
+Client connected
+Received: {"node":"vm2","cpu":13,"memory":31}
+Client connected
+Received: {"node":"vm2","cpu":67,"memory":33}
+Client connected
+Received: {"node":"vm2","cpu":10,"memory":94}
+Client connected
+Received: {"node":"vm2","cpu":52,"memory":45}
+Client connected
+Received: {"node":"vm1","cpu":54,"memory":33}
+Client connected
+Received: {"node":"vm2","cpu":59,"memory":6}
+Client connected
+Received: {"node":"vm1","cpu":26,"memory":6}
+Client connected
+Received: {"node":"vm2","cpu":78,"memory":43}
+Client connected
+Received: {"node":"vm1","cpu":57,"memory":95}
+
+

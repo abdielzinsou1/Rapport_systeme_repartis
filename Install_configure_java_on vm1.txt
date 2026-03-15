@@ -1,0 +1,92 @@
+vm1@vm1-VirtualBox:~$ java --version
+openjdk 17.0.18 2026-01-20
+OpenJDK Runtime Environment (build 17.0.18+8-Ubuntu-124.04.1)
+OpenJDK 64-Bit Server VM (build 17.0.18+8-Ubuntu-124.04.1, mixed mode, sharing)
+vm1@vm1-VirtualBox:~$ javac --version
+javac 17.0.18
+vm1@vm1-VirtualBox:~$ cd Bureau/
+vm1@vm1-VirtualBox:~/Bureau$ cd monitoring-agent/
+vm1@vm1-VirtualBox:~/Bureau/monitoring-agent$ ls -la
+total 16
+drwxrwxr-x 2 vm1 vm1 4096 mars  14 20:57 .
+drwxr-xr-x 3 vm1 vm1 4096 mars  14 20:57 ..
+-rw-rw-r-- 1 vm1 vm1 1323 mars  14 20:45 AgentMain.class
+-rw-rw-r-- 1 vm1 vm1  795 mars  14 20:44 AgentMain.java
+vm1@vm1-VirtualBox:~/Bureau/monitoring-agent$ javac AgentMain.java 
+vm1@vm1-VirtualBox:~/Bureau/monitoring-agent$
+
+
+Configuration du client java sur la vm1:
+
+vm1@vm1-VirtualBox:~/Bureau/monitoring-agent$ java AgentMain
+java.net.NoRouteToHostException: Aucun chemin d'accès pour atteindre l'hôte cible
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:591)
+	at java.base/sun.nio.ch.Net.connect(Net.java:580)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:593)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at java.base/java.net.Socket.connect(Socket.java:583)
+	at java.base/java.net.Socket.<init>(Socket.java:507)
+	at java.base/java.net.Socket.<init>(Socket.java:287)
+	at AgentMain.main(AgentMain.java:20)
+java.net.NoRouteToHostException: Aucun chemin d'accès pour atteindre l'hôte cible
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:591)
+	at java.base/sun.nio.ch.Net.connect(Net.java:580)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:593)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at java.base/java.net.Socket.connect(Socket.java:583)
+	at java.base/java.net.Socket.<init>(Socket.java:507)
+	at java.base/java.net.Socket.<init>(Socket.java:287)
+	at AgentMain.main(AgentMain.java:20)
+java.net.NoRouteToHostException: Aucun chemin d'accès pour atteindre l'hôte cible
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:591)
+	at java.base/sun.nio.ch.Net.connect(Net.java:580)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:593)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at java.base/java.net.Socket.connect(Socket.java:583)
+	at java.base/java.net.Socket.<init>(Socket.java:507)
+	at java.base/java.net.Socket.<init>(Socket.java:287)
+	at AgentMain.main(AgentMain.java:20)
+java.net.NoRouteToHostException: Aucun chemin d'accès pour atteindre l'hôte cible
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:591)
+	at java.base/sun.nio.ch.Net.connect(Net.java:580)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:593)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at java.base/java.net.Socket.connect(Socket.java:583)
+	at java.base/java.net.Socket.<init>(Socket.java:507)
+	at java.base/java.net.Socket.<init>(Socket.java:287)
+	at AgentMain.main(AgentMain.java:20)
+java.net.NoRouteToHostException: Aucun chemin d'accès pour atteindre l'hôte cible
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:591)
+	at java.base/sun.nio.ch.Net.connect(Net.java:580)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:593)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at java.base/java.net.Socket.connect(Socket.java:583)
+	at java.base/java.net.Socket.<init>(Socket.java:507)
+	at java.base/java.net.Socket.<init>(Socket.java:287)
+	at AgentMain.main(AgentMain.java:20)
+java.net.NoRouteToHostException: Aucun chemin d'accès pour atteindre l'hôte cible
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:591)
+	at java.base/sun.nio.ch.Net.connect(Net.java:580)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:593)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at java.base/java.net.Socket.connect(Socket.java:583)
+	at java.base/java.net.Socket.<init>(Socket.java:507)
+	at java.base/java.net.Socket.<init>(Socket.java:287)
+	at AgentMain.main(AgentMain.java:20)
+^Cvm1@vm1-VirtualBox:~/Bureau/monitoring-agent$ nano AgentMain.java 
+vm1@vm1-VirtualBox:~/Bureau/monitoring-agent$ javac AgentMain.java 
+vm1@vm1-VirtualBox:~/Bureau/monitoring-agent$ java AgentMain
+
+
